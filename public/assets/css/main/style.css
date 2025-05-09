@@ -35,3 +35,37 @@ button.close{
     padding:1rem;
     margin:auto
 }
+
+/* CSS untuk searchbar */
+.search-container {
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-input {
+    padding: 3px;
+    width: 100%;
+    border: 2px rgb(197, 197, 197) solid;
+    border-radius: 5px;
+}
+
+.stats-icon.orange{
+    background-color: #ff9f44
+}
+
+.stats-icon.yellow{
+    background-color: #F4E869
+}
+
+body.theme-dark .stats-icon.orange{
+    background-color: #ff9f44
+}
+
+body.theme-dark .stats-icon.yellow{
+    background-color: #F4E869
+}
+
+.suket{
+    width: 250px;
+}

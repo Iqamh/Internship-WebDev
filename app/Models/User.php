@@ -70,4 +70,15 @@ class User extends Authenticatable
 
         return $currentDate > $endDate;
     }
+
+    public function anggota()
+    {
+        return $this->hasMany(User::class, 'group_id', 'group_id')->where('role', 'anggota');
+    }
+    
+    public function ketua()
+    {
+        return $this->hasOne(User::class, 'group_id', 'group_id')->where('role', 'ketua');
+    }
+    
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Mazer Admin Dashboard</title>
+    <title>Informasi Magang Dinkopdag</title>
 
     <link rel="stylesheet" href="{{ asset('assets/css/main/app.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main/app-dark.css') }}">
@@ -14,9 +14,7 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/shared/iconly.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/pages/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/extensions/datatables.net-bs5/css/dataTables.bootstrap5.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/pages/datatables.css') }}">
+    <script src="https://kit.fontawesome.com/dce93f02d9.js" crossorigin="anonymous"></script>
 
 </head>
     <body>
@@ -24,7 +22,9 @@
             <div class="main">
                 <header class="mb-3 d-flex justify-content-between">
                     <div class="logo">
-                        <a href="{{ Route('dashboard') }}"><img src="assets/images/logo/logo.png" alt="Logo" width="265"></a>
+                        <a href="{{ request()->is('admin-magang-dinkopdag*') ? route('admin.dashboard') : route('dashboard') }}">
+                            <img src="assets/images/logo/logo.png" alt="Logo" width="265">
+                        </a>
                     </div>
                     <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -70,11 +70,7 @@
         <script src="{{ asset('assets/js/bootstrap.js') }}"></script>
         <script src="{{ asset('assets/js/app.js') }}"></script>
         <script src="{{ asset('assets/js/main.js') }}"></script>
-        
-        <script src="{{ asset('assets/extensions/jquery/jquery.min.js') }}"></script>
-        <script src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
-        <script src="{{ asset('assets/js/pages/datatables.js') }}"></script>
-        <script src="{{ asset('assets/js/main.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     </body>
 

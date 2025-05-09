@@ -20,3 +20,8 @@ Route::post('/form-data/store', [SetController::class, 'store'])->name('form.sto
 
 Route::get('/admin-magang-dinkopdag', [SetController::class, 'index2'])->name('admin.dashboard');
 Route::put('/admin-magang-dinkopdag/update/{id}', [SetController::class, 'upStatus'])->name('admin.upStatus');
+Route::put('/admin-magang-dinkopdag/bidangKetua/{id}', [SetController::class, 'updateBidangKetua'])->name('admin.updateBidangKetua');
+Route::put('/admin-magang-dinkopdag/bidangAnggota/{id}', [SetController::class, 'updateBidangAnggota'])->name('admin.updateBidangAnggota');
+Route::put('/admin-magang-dinkopdag/update_suket/{groupId}', [SetController::class, 'updateSurat'])->name('admin.updateSurat');
+Route::delete('/admin-magang-dinkopdag/delete/{id}', [SetController::class, 'destroy'])->name('admin.delete');
+Route::get('/admin-magang-dinkopdag/download/{filename}', [SetController::class, 'downloadPdf'])->name('download.pdf');
