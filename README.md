@@ -39,5 +39,5 @@ This project was implemented as part of an internship program at a government ag
 
 - **Backend**: Laravel
 - **Database**: MySQL
-- **Frontend**: HTML/CSS template (template name not recorded)
+- **Frontend**: HTML & CSS (Bootstrap)
 - **Authentication**: Laravel built-in Auth
